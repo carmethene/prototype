@@ -56,7 +56,3 @@ so please ask me first if you want to reuse those.  The font is freeware and cam
 http://www.fontfreak.com/.  The art assets are from the DirectX SDK, but I have tweaked the
 colours.
 
-
-------------------------------------
-Neil Wakefield, Lionhead Studios Ltd
-nwakefield@lionhead.com
