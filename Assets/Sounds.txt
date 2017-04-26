@@ -1,0 +1,11 @@
+#Number	File
+
+0	sounds/human_fire.wav
+1	sounds/human_die.wav
+2	sounds/computer_fire.wav
+3	sounds/computer_die.wav
+4	sounds/ammo_die.wav
+5	sounds/game_over.wav
+6	sounds/menu_back.wav
+7	sounds/menu_select.wav
+8	sounds/ship_entry.wav

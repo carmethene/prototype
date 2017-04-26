@@ -1,0 +1,6 @@
+#Type	Number	File
+
+MESH	0	meshes/ship1.x
+MESH	1	meshes/sphere.x
+MESH	2	meshes/ship2.x
+MESH	3	meshes/ship3.x

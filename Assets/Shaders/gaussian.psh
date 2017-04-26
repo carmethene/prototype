@@ -1,0 +1,50 @@
+//gaussian.psh - gaussian blurs a texture in a single direction supplied as a shader constant
+
+ps.2.0
+
+dcl t0.xy
+dcl_2d s0
+
+def c1, 0.0f, 0.0f, 0.0f, 0.0f
+def c2, 0.5,0.35,0.15,0.03	//blend weights
+//def c2, 0.35,0.15,0.03,0.03	//blend weights
+
+//load pixels
+mov r0.x, t0.x
+mov r0.y, t0.y
+mov r0.z, c1.x
+mov r0.a, c1.x
+
+add r1, r0, c0
+add r2, r1, c0
+add r3, r2, c0
+sub r4, r0, c0
+sub r5, r1, c0
+sub r6, r2, c0
+
+texld r0, t0, s0
+texld r1, r1, s0
+texld r2, r2, s0
+texld r3, r3, s0
+texld r4, r4, s0
+texld r5, r5, s0
+texld r6, r6, s0
+
+//modulate by gaussian weights
+mul r1, r1, c2.xxxx
+mul r2, r2, c2.yyyy
+mul r3, r3, c2.zzzz
+mul r4, r4, c2.zzzz
+mul r5, r5, c2.yyyy
+mul r6, r6, c2.xxxx
+
+//add together
+add r0, r0, r1
+add r0, r0, r2
+add r0, r0, r3
+add r0, r0, r4
+add r0, r0, r5
+add r0, r0, r6
+
+//output
+mov oC0, r0
