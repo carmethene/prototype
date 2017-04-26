@@ -1,4 +1,4 @@
-![](https://github.com/carmethene/prototype/prototype.jpg "Prototype")
+![](https://github.com/carmethene/prototype/raw/master/prototype.jpg)
 
 -----------------------------
     Prototype Readme File  
