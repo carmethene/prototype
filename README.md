@@ -1,3 +1,5 @@
+![](https://github.com/carmethene/prototype/prototype.jpg "Prototype")
+
 -----------------------------
     Prototype Readme File  
    (c)2005  Neil Wakefield
